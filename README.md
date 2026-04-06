@@ -1,7 +1,5 @@
 # 🎓 SMVITM Alumni Portal
 
-![Alumni Connect Header](./public/header.png)
-
 ### Reconnecting the Past, Empowering the Future.
 
 Welcome to the **SMVITM Alumni Portal**, a premium, high-performance web platform designed to foster a vibrant community of alumni, students, and faculty. This portal serves as the central hub for professional networking, mentorship, and collective growth.
@@ -63,16 +61,6 @@ Welcome to the **SMVITM Alumni Portal**, a premium, high-performance web platfor
 
 5. **Open the browser**:
    Visit `http://localhost:3000` to see the portal in action.
-
----
-
-## 📸 Visuals
-
-| Community | About | Mentorship |
-| :---: | :---: | :---: |
-| ![Community Forum](https://via.placeholder.com/400x250.png?text=Community+Forum) | ![About SMVITM](https://via.placeholder.com/400x250.png?text=About+SMVITM+Alumni) | ![Mentorship System](https://via.placeholder.com/400x250.png?text=Mentorship+System) |
-
-*(Real screenshots coming soon!)*
 
 ---
 
