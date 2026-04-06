@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMVITM Alumni Portal | Connecting Generations</title>
+    <meta name="description" content="A unified platform for SMVITM alumni, students, and faculty to collaborate, mentor, and grow together.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coves:wght@700&family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">SMVITM<span class="logo-accent">AA</span></span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#community" class="nav-link">Community</a>
+                <a href="#directory" class="nav-link">Directory</a>
+                <a href="#giving" class="nav-link">Giving</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn-primary" id="loginBtn">Portal Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="wrapper hero-grid fade-in-up">
+                <div class="hero-content">
+                    <h1>Connecting <span class="highlight">SMVITM</span> Across Generations</h1>
+                    <p>A unified platform for alumni, students, and faculty to collaborate, mentor, and grow together.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-secondary large">Join Alumni Network</button>
+                        <button class="btn-outline large">Explore Community</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="image-composite">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop" class="hero-img main-img" alt="Students collaborating">
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1469&auto=format&fit=crop" class="hero-img float-img" alt="Professional alumni">
+                        <div class="network-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TRUST / IMPACT STRIP -->
+        <section class="trust-strip fade-in-up">
+            <div class="wrapper">
+                <div class="trust-grid">
+                    <div class="trust-card">
+                        <div class="trust-icon"><i data-lucide="graduation-cap"></i></div>
+                        <div>
+                            <h3>5,000+</h3>
+                            <p>Alumni Network</p>
+                        </div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-icon"><i data-lucide="globe-2"></i></div>
+                        <div>
+                            <h3>25+</h3>
+                            <p>Countries</p>
+                        </div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-icon"><i data-lucide="briefcase"></i></div>
+                        <div>
+                            <h3>4,000+</h3>
+                            <p>Active Professionals</p>
+                        </div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-icon"><i data-lucide="users"></i></div>
+                        <div>
+                            <h3>300+</h3>
+                            <p>Mentorship Sessions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. QUICK ACCESS GRID -->
+        <section class="quick-access section-padding fade-in-up">
+            <div class="wrapper">
+                <div class="section-header">
+                    <h2>Explore the Community</h2>
+                    <p>Everything you need to stay connected and accelerate your career.</p>
+                </div>
+                <div class="access-grid">
+                    <div class="access-card">
+                        <div class="ac-icon"><i data-lucide="message-square"></i></div>
+                        <h3>Forum</h3>
+                        <p>Join department-wise discussions, ask questions, and share knowledge.</p>
+                    </div>
+                    <div class="access-card">
+                        <div class="ac-icon"><i data-lucide="briefcase"></i></div>
+                        <h3>Jobs & Internships</h3>
+                        <p>Find exclusive opportunities posted internally by SMVITM alumni.</p>
+                    </div>
+                    <div class="access-card">
+                        <div class="ac-icon"><i data-lucide="book-open"></i></div>
+                        <h3>Mentorship</h3>
+                        <p>Sign up to guide junior students or find a mentor in your industry.</p>
+                    </div>
+                    <div class="access-card">
+                        <div class="ac-icon"><i data-lucide="users"></i></div>
+                        <h3>Alumni Directory</h3>
+                        <p>Search by batch, department, or company to build your network.</p>
+                    </div>
+                    <div class="access-card">
+                        <div class="ac-icon"><i data-lucide="calendar"></i></div>
+                        <h3>Events</h3>
+                        <p>RSVP for chapter meets, flagship reunions, and webinars.</p>
+                    </div>
+                    <div class="access-card">
+                        <div class="ac-icon"><i data-lucide="newspaper"></i></div>
+                        <h3>News & Achievements</h3>
+                        <p>Stay updated with the proudest moments of our global family.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ABOUT PREVIEW -->
+        <section id="about" class="about-preview section-padding bg-light fade-in-up">
+            <div class="wrapper about-grid">
+                <div class="about-content">
+                    <h2>Empowering the SMVITM Family</h2>
+                    <p>The Shri Madhwa Vadiraja Institute of Technology & Management Alumni Association (SMVITMAA) is a formally registered body (under Act 1960) dedicated to fostering a lifelong bond between the institution and its graduates.</p>
+                    <p>Our Alumni Cell actively bridges the gap between campus and corporate, working tirelessly to integrate alumni into the institutional fabric through talks, resources, and continuous engagement.</p>
+                    <button class="btn-primary mt-4">Learn More About SMVITMAA <i data-lucide="arrow-right" class="ml-2"></i></button>
+                </div>
+                <div class="about-visual">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1470&auto=format&fit=crop" class="rounded-img shadow-lg" alt="SMVITM Campus">
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FEATURED ALUMNI -->
+        <section class="featured-alumni section-padding fade-in-up">
+            <div class="wrapper">
+                <div class="section-header">
+                    <h2>Featured Alumni</h2>
+                    <p>Leaders transforming industries across the globe.</p>
+                </div>
+                
+                <div class="slider-container">
+                    <button class="slider-btn prev-btn" id="prevAlumni" aria-label="Previous Alumni"><i data-lucide="chevron-left"></i></button>
+                    <div class="alumni-scroll" id="alumniSlider">
+                    <div class="alumni-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Rahul Kotian">
+                        <h4>Rahul Kotian</h4>
+                        <span class="role">Head Projects</span>
+                        <span class="company">Interior Fit-out</span>
+                        <p>President of SMVITMAA. Civil Engg, Batch of 2014.</p>
+                    </div>
+                    <div class="alumni-card">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop" alt="Lahari Vaidya">
+                        <h4>Lahari Vaidya</h4>
+                        <span class="role">Asst. Professor</span>
+                        <span class="company">SMVITM</span>
+                        <p>Secretary of SMVITMAA. E&C Engg, Batch of 2017.</p>
+                    </div>
+                    <div class="alumni-card">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop" alt="Allen Jacob">
+                        <h4>Allen Jacob</h4>
+                        <span class="role">Mechanical Engineer</span>
+                        <span class="company">Germany</span>
+                        <p>Board Member. Mechanical Engg, Batch of 2014.</p>
+                    </div>
+                    <div class="alumni-card">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop" alt="Shilpa Shetty">
+                        <h4>Shilpa Shetty</h4>
+                        <span class="role">Software Engineer</span>
+                        <span class="company">Apple India</span>
+                        <p>Board Member. E&C Engg, Batch of 2014.</p>
+                    </div>
+                    </div>
+                    <button class="slider-btn next-btn" id="nextAlumni" aria-label="Next Alumni"><i data-lucide="chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. LATEST UPDATES -->
+        <section class="latest-updates section-padding bg-light fade-in-up">
+            <div class="wrapper">
+                <div class="section-header">
+                    <h2>Latest Updates</h2>
+                    <p>What's happening inside the network.</p>
+                </div>
+                
+                <div class="feed-grid">
+                    <article class="feed-card">
+                        <div class="feed-img">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500&h=300&fit=crop" alt="Event">
+                            <span class="feed-tag">Event</span>
+                        </div>
+                        <div class="feed-content">
+                            <h3>Global Alumni Meet 2026</h3>
+                            <p>Join us this December as we host the largest reunion in SMVITM history. Register early to book your spots and reconnect with batchmates.</p>
+                            <a href="#" class="feed-link">Read More <i data-lucide="chevron-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="feed-card">
+                        <div class="feed-img">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop" alt="Talk">
+                            <span class="feed-tag talk">Tech Talk</span>
+                        </div>
+                        <div class="feed-content">
+                            <h3>AI in Healthcare - Guest Lecture</h3>
+                            <p>Dr. Smitha, an alumnus from the 2015 batch, recently visited the campus to discuss disruptive innovations in med-tech.</p>
+                            <a href="#" class="feed-link">Read More <i data-lucide="chevron-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="feed-card">
+                        <div class="feed-img">
+                            <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=500&h=300&fit=crop" alt="Achievement">
+                            <span class="feed-tag achieve">Achievement</span>
+                        </div>
+                        <div class="feed-content">
+                            <h3>Startup Success: Niveus Solutions</h3>
+                            <p>Congratulating our alumni involved with Niveus for their recent expansion. Read the exclusive interview with the founders.</p>
+                            <a href="#" class="feed-link">Read More <i data-lucide="chevron-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. MENTORSHIP HIGHLIGHT -->
+        <section class="mentorship-highlight section-padding fade-in-up">
+            <div class="wrapper align-center">
+                <div class="mentorship-box">
+                    <h2>Shape the Next Generation</h2>
+                    <p>Guidance changes lives. Volunteer to be a mentor, share your industry insights, and help students or junior alumni navigate their career growth successfully.</p>
+                    <button class="btn-primary large mt-4">Find a Mentor</button>
+                    <button class="btn-outline ml-2 large mt-4">Become a Mentor</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. ALUMNI GIVING -->
+        <section id="giving" class="giving-section section-padding fade-in-up">
+            <div class="wrapper giving-split">
+                <div class="giving-visual">
+                    <div class="gold-card">
+                        <div class="gold-icon"><i data-lucide="hand-coins"></i></div>
+                        <h3>Alumni Corpus Fund</h3>
+                        <p>Supporting Excellence</p>
+                        <button class="btn-outline-white mt-4" id="viewPolicyBtn">View Policy Details <i data-lucide="external-link" class="ml-2" style="width: 16px; height: 16px;"></i></button>
+                    </div>
+                </div>
+                <div class="giving-content">
+                    <h2>Leave a Lasting Impact</h2>
+                    <p>The SMVITM Corpus Fund is dedicated to empowering meritorious students and advancing institutional infrastructure. Your contributions play a profound role in the college’s socio-educational mission.</p>
+                    <ul class="impact-list">
+                        <li><i data-lucide="check" class="check-icon"></i> Fueling purely academic scholarships.</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Transparent allocation of funds.</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Enhancing R&D and core facilities.</li>
+                    </ul>
+                    <button class="btn-secondary large mt-6">Contribute Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. CTA (STRONG CLOSE) -->
+        <section class="cta-banner fade-in-up">
+            <div class="cta-overlay"></div>
+            <div class="cta-content wrapper">
+                <h2>Be a part of the SMVITM Alumni Network</h2>
+                <p>Don't miss out on exclusive opportunities, reconnections, and the power of our community.</p>
+                <div class="cta-buttons mt-6">
+                    <button class="btn-secondary large">Join Now</button>
+                    <button class="btn-outline-white large ml-2">Connect With Alumni</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 10. FOOTER -->
+    <footer class="footer">
+        <div class="wrapper footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span style="color:var(--white);">SMVITM</span><span class="logo-accent">AA</span>
+                </div>
+                <p>Connecting generations of excellence. A unified network for growth, mentorship, and opportunity.</p>
+                <div class="social-links mt-4">
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About SMVITMAA</a></li>
+                    <li><a href="#community">Community & Forum</a></li>
+                    <li><a href="#directory">Directory</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="https://sode-edu.in/" target="_blank">Main SMVITM Site <i data-lucide="external-link" style="width: 14px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrapper">
+                <p>&copy; 2026 Shri Madhwa Vadiraja Institute of Technology & Management Alumni Association. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PDF MODAL -->
+    <div id="pdfModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Corpus Fund Policy</h3>
+                <button id="closeModalBtn" class="modal-close-btn" aria-label="Close Modal"><i data-lucide="x"></i></button>
+            </div>
+            <div class="modal-body">
+                <iframe src="Alumni-corpus-fund.pdf" width="100%" height="100%" style="border: none;" title="Alumni Corpus Fund Policy">
+                    <p>It appears your web browser doesn't support embedded PDFs. <a href="Alumni-corpus-fund.pdf" target="_blank">Click here to open the PDF directly.</a></p>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
