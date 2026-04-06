@@ -1,4 +1,4 @@
-# 🎓 SMVITM Alumni Portal
+# 🎓 SMVITM Alumni Association Portal
 
 ### Reconnecting the Past, Empowering the Future.
 
@@ -84,8 +84,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ### 📬 Contact
 
-**SMVITM Alumni Association**  
-📧 alumni@smvitm.edu.in  
-🌐 [smvitm.edu.in](https://smvitm.edu.in)
+**WEBMASTER**  
+📧 webmaster@sode-edu.in  
+🌐 [sode.edu.in](https://sode.edu.in)
 
 Made with ❤️ by the SMVITM Community.
