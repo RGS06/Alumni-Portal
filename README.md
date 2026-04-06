@@ -88,4 +88,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 📧 webmaster@sode-edu.in  
 🌐 [sode.edu.in](https://sode.edu.in)
 
-Made with ❤️ by the SMVITM Community.
+Made with ❤️
