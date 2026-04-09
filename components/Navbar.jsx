@@ -47,7 +47,7 @@ export default function Navbar() {
       id="navbar"
       style={{
         boxShadow: scrolled || isMenuOpen ? '0 10px 30px rgba(0,0,0,0.08)' : 'none',
-        padding: scrolled ? '0.8rem 0' : '1.25rem 0',
+        padding: scrolled ? '0.5rem 0' : '1rem 0',
       }}
     >
       <div className="nav-container">

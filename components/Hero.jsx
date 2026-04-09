@@ -32,7 +32,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="hero-section" style={{ position: 'relative', overflow: 'hidden', padding: '120px 0' }}>
+    <section id="home" className="hero-section" style={{ position: 'relative', overflow: 'hidden', paddingTop: '80px', paddingBottom: '40px' }}>
       
       {/* Dramatic Animated Background Blobs */}
       <motion.div 
@@ -102,11 +102,11 @@ export default function Hero() {
         >
           <div className="image-composite">
             <div className="main-img-wrapper" style={{ position: 'absolute', width: '85%', height: '85%', top: 0, right: 0, zIndex: 2 }}>
-              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop" className="hero-img main-img" alt="Students" style={{ width: '100%', height: '100%', borderRadius: '40px', boxShadow: '0 40px 100px rgba(0,0,0,0.15)' }} />
+              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1470&auto=format&fit=crop" className="hero-img main-img" alt="Graduation" style={{ width: '100%', height: '100%', borderRadius: '40px', boxShadow: '0 40px 100px rgba(0,0,0,0.15)', objectFit: 'cover' }} />
             </div>
             
             <div className="float-img-wrapper" style={{ position: 'absolute', width: '65%', height: '65%', bottom: '-10%', left: '-10%', zIndex: 3 }}>
-              <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1469&auto=format&fit=crop" className="hero-img float-img" alt="Alumni" style={{ width: '100%', height: '100%', borderRadius: '32px', border: '12px solid white', boxShadow: '0 30px 80px rgba(0,0,0,0.1)' }} />
+              <img src="/alumni1.jpg" className="hero-img float-img" alt="Alumni" style={{ width: '100%', height: '100%', borderRadius: '32px', border: '12px solid white', boxShadow: '0 30px 80px rgba(0,0,0,0.1)', objectFit: 'cover' }} />
             </div>
 
             <div className="network-dots" style={{ opacity: 0.5 }}></div>

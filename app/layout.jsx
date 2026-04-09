@@ -6,6 +6,15 @@ import { AuthProvider } from '../components/AuthContext'
 export const metadata = {
   title: 'SMVITM Alumni Portal | Connecting Generations',
   description: 'A unified platform for SMVITM alumni, students, and faculty to collaborate, mentor, and grow together.',
+  icons: {
+    icon: [
+      { url: '/web-app-manifest-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/web-app-manifest-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/web-app-manifest-192x192.png' },
+    ],
+  },
 }
 
 export default function RootLayout({ children }) {
