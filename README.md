@@ -184,18 +184,6 @@ We welcome contributions from alumni and students!
 5. Open a Pull Request
 
 ---
-
-## 👨‍💻 Team
-
-| Role | Name |
-|---|---|
-| **Lead Developer** | Raghavendra G S |
-| **Developer** | Sathwik Shetty M |
-| **Developer** | Hrishikesh Kamath |
-| **Developer** | Adithya Shetty |
-| **Developer** | Darshan N |
-
-**Department of Computer Science & Engineering**
 **Shri Madhwa Vadiraja Institute of Technology & Management, Bantakal**
 
 ---
