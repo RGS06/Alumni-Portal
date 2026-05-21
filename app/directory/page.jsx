@@ -1,6 +1,7 @@
 import FadeIn from '../../components/ui/FadeIn';
 import { Search, MapPin } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Alumni Directory | SMVITMAA',
@@ -11,7 +12,7 @@ export default function DirectoryPage() {
     <>
       <section className="page-header">
         <FadeIn className="wrapper">
-          <h1>Global Alumni Directory</h1>
+          <h1>Alumni Directory</h1>
           <p>Find, connect, and collaborate with peers across the globe.</p>
         </FadeIn>
       </section>
@@ -47,7 +48,7 @@ export default function DirectoryPage() {
             <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
               <MapPin size={16} /> Bengaluru
             </p>
-            <button className="btn-primary" style={{ width: '100%', marginTop: '1rem' }}>Connect</button>
+            <Link href="/login" className="btn-primary" style={{ width: '100%', marginTop: '1rem', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Connect</Link>
           </div>
           {/* Duplicates for UI preview */}
           <div className="alumni-card">
@@ -59,7 +60,7 @@ export default function DirectoryPage() {
             <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
               <MapPin size={16} /> Apple India
             </p>
-            <button className="btn-primary" style={{ width: '100%', marginTop: '1rem' }}>Connect</button>
+            <Link href="/login" className="btn-primary" style={{ width: '100%', marginTop: '1rem', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Connect</Link>
           </div>
         </FadeIn>
       </section>

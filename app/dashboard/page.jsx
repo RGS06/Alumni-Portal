@@ -166,7 +166,7 @@ export default function Dashboard() {
                       <div style={{ ...navIconBox, background: 'var(--secondary-color)', color: 'white' }}><ShieldAlert size={20} /></div>
                       <div style={{ flex: 1 }}>
                         <p style={{ margin: 0, fontWeight: 700, color: 'var(--accent-dark)', fontSize: '0.95rem' }}>Admin Console</p>
-                        <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-muted)' }}>Global portal management</p>
+                        <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-muted)' }}>Portal management</p>
                       </div>
                     </div>
                   )}

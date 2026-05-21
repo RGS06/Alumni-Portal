@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import FadeIn from './ui/FadeIn';
+import Link from 'next/link';
 import { BookOpen, Rocket, Award, HandCoins, ArrowRight } from 'lucide-react';
 
 export default function TrustStrip() {
@@ -13,15 +14,17 @@ export default function TrustStrip() {
       icon: <BookOpen size={24} />,
       heading: "Building the Foundation",
       description: "Even before graduation, the alumni network is here. Get paired with industry mentors, secure highly-coveted internships through alumni referrals, and attend exclusive guest lectures from graduates who have walked the same halls.",
-      actionText: "Explore Mentorship"
+      actionText: "Explore Mentorship",
+      href: "/mentorship"
     },
     {
       id: "early-career",
       title: "Early Career",
       icon: <Rocket size={24} />,
       heading: "Accelerating Your Growth",
-      description: "Just graduated? We've got your back. Tap into our global directory to find SMVITM alumni in your new city. Access professional resume reviews, interview prep, and direct job opportunities posted exclusively for our network.",
-      actionText: "View Job Board"
+      description: "Just graduated? We've got your back. Tap into our alumni directory to find SMVITM alumni in your new city. Access professional resume reviews, interview prep, and direct job opportunities posted exclusively for our network.",
+      actionText: "View Job Board",
+      href: "/opportunities"
     },
     {
       id: "leader",
@@ -29,7 +32,8 @@ export default function TrustStrip() {
       icon: <Award size={24} />,
       heading: "Expand Your Influence",
       description: "As your career peaks, the portal becomes a powerful tool for executive networking. Recruit top-tier engineering talent directly from SMVITM, build strategic business partnerships, and establish your legacy as an industry voice.",
-      actionText: "Recruit Talent"
+      actionText: "Recruit Talent",
+      href: "/opportunities"
     },
     {
       id: "giving-back",
@@ -37,7 +41,8 @@ export default function TrustStrip() {
       icon: <HandCoins size={24} />,
       heading: "Empowering the Next Generation",
       description: "Complete the circle. Support meritorious students through the Corpus Fund, establish scholarships in your name, or simply return to campus to judge hackathons and deliver inspiring keynote addresses.",
-      actionText: "Make an Impact"
+      actionText: "Make an Impact",
+      href: "/giving"
     }
   ];
 
@@ -122,9 +127,9 @@ export default function TrustStrip() {
             <p style={{ fontSize: '1.1rem', color: 'var(--text-body)', lineHeight: 1.7, maxWidth: '700px', marginBottom: '2rem' }}>
               {journeySteps[activeStep].description}
             </p>
-            <button className="btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+            <Link href={journeySteps[activeStep].href} className="btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
               {journeySteps[activeStep].actionText} <ArrowRight size={16} />
-            </button>
+            </Link>
           </div>
 
         </div>

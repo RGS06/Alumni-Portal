@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useAuth } from './AuthContext';
-import { supabase } from '../lib/supabaseClient';
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
@@ -12,12 +11,17 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
-  const { user } = useAuth();
+  const { user, profile, signOut } = useAuth();
 
   const handleLogout = async () => {
-    await supabase.auth.signOut();
-    router.push('/');
-    setIsMenuOpen(false);
+    try {
+      setIsMenuOpen(false);
+      await signOut();
+      router.refresh();
+      router.push('/');
+    } catch (e) {
+      console.error('Sign out error:', e);
+    }
   };
 
   const toggleMenu = () => {
@@ -64,6 +68,7 @@ export default function Navbar() {
           <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
           <Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About</Link>
           <Link href="/directory" className={`nav-link ${pathname === '/directory' ? 'active' : ''}`}>Directory</Link>
+          <Link href="/yearbook" className={`nav-link ${pathname?.startsWith('/yearbook') ? 'active' : ''}`}>Yearbook</Link>
           <Link href="/community" className={`nav-link ${pathname === '/community' ? 'active' : ''}`}>Community</Link>
           <Link href="/opportunities" className={`nav-link ${pathname === '/opportunities' ? 'active' : ''}`}>Jobs</Link>
           <Link href="/events" className={`nav-link ${pathname === '/events' ? 'active' : ''}`}>Events</Link>
@@ -96,6 +101,9 @@ export default function Navbar() {
         <div className="nav-actions">
           {user ? (
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+              {['admin','superadmin'].includes(profile?.role || user?.user_metadata?.role) && (
+                <Link href="/admin" className="nav-link" style={{ fontWeight: 700, color: 'var(--secondary-color)' }}>Admin</Link>
+              )}
               <Link href="/dashboard" className="nav-link" style={{ fontWeight: 600, color: 'var(--primary-color)' }}>Dashboard</Link>
               <button 
                 className="btn-outline" 

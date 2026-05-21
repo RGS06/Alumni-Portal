@@ -6,7 +6,7 @@ export default function Globe() {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
 
-  // Generate 800 random nodes for the global network
+  // Generate 800 random nodes for the network
   const nodes = useMemo(() => {
     return Array.from({ length: 800 }).map(() => ({
       phi: Math.random() * Math.PI * 2,
@@ -106,7 +106,7 @@ export default function Globe() {
       <canvas ref={canvasRef} style={{ width: '100%', height: '100%', display: 'block' }} />
       <div style={{ position: 'absolute', bottom: '2rem', right: '1rem', width: '220px', pointerEvents: 'none' }}>
         <p style={{ fontSize: '0.75rem', fontWeight: 800, color: 'rgba(30, 54, 117, 0.3)', textTransform: 'uppercase', letterSpacing: '2.5px', textAlign: 'right', margin: 0 }}>
-           Global Legacy Nodes <br /> 
+           Legacy Nodes <br /> 
            <span style={{ color: 'var(--primary-color)', opacity: 0.8 }}>Live Alumni Connection</span>
         </p>
       </div>

@@ -9,7 +9,7 @@ const CARDS = [
   { icon: <BookOpen size={26} />, title: 'Mentorship', desc: 'Sign up to guide junior students or find a mentor in your industry.', href: '/mentorship' },
   { icon: <Users size={26} />, title: 'Alumni Directory', desc: 'Search by batch, department, or company to build your network.', href: '/directory' },
   { icon: <Calendar size={26} />, title: 'Events', desc: 'RSVP for chapter meets, flagship reunions, and webinars.', href: '/events' },
-  { icon: <Newspaper size={26} />, title: 'News & Achievements', desc: 'Stay updated with the proudest moments of our global family.', href: '/media' },
+  { icon: <Newspaper size={26} />, title: 'News & Achievements', desc: 'Stay updated with the proudest moments of our alumni family.', href: '/media' },
 ];
 
 export default function QuickAccess() {

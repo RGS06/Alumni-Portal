@@ -1,6 +1,7 @@
 import FadeIn from './ui/FadeIn';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AboutPreview() {
   return (
@@ -10,9 +11,9 @@ export default function AboutPreview() {
           <h2>Empowering the SMVITM Family</h2>
           <p>The Shri Madhwa Vadiraja Institute of Technology & Management Alumni Association (SMVITMAA) is a formally registered body (under Act 1960) dedicated to fostering a lifelong bond between the institution and its graduates.</p>
           <p>Our Alumni Cell actively bridges the gap between campus and corporate, working tirelessly to integrate alumni into the institutional fabric through talks, resources, and continuous engagement.</p>
-          <button className="btn-primary mt-4">
+          <Link href="/about" className="btn-primary mt-4 inline-flex items-center">
             Learn More About SMVITMAA <ArrowRight className="ml-2" size={20} />
-          </button>
+          </Link>
         </div>
         <div className="about-visual" style={{ position: 'relative', height: '400px' }}>
           <Image 

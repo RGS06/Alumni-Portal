@@ -54,7 +54,7 @@ export default function GivingPage() {
           <div className="giving-content">
             <h2 style={{ color: 'var(--primary-color)' }}>Empowering Future Engineers</h2>
             <p style={{ textAlign: 'justify' }}>
-              The <strong>SMVITM Alumni Corpus Fund</strong> has been established with the core objective of aggregating philanthropic contributions from our global alumni network. This centralized fund ensures that your contributions are strategically utilized to maximize institutional impact, maintaining the highest levels of transparency and accountability under the guidance of the Executive Committee.
+              The <strong>SMVITM Alumni Corpus Fund</strong> has been established with the core objective of aggregating philanthropic contributions from our alumni network. This centralized fund ensures that your contributions are strategically utilized to maximize institutional impact, maintaining the highest levels of transparency and accountability under the guidance of the Executive Committee.
             </p>
             <p style={{ textAlign: 'justify' }}>
               By contributing to the corpus, you directly participate in the socio-educational mission of SMVITM, ensuring that financial constraints never hinder academic brilliance.
@@ -132,7 +132,7 @@ export default function GivingPage() {
           </div>
           <div className="modal-body">
             <iframe 
-              src="/Alumni-corpus-fund.pdf" 
+              src="https://docs.google.com/viewer?url=https://sode-edu.in/smvitm/wp-content/uploads/2026/04/Alumni-Corpus-Fund-Scanned.pdf&embedded=true" 
               width="100%" 
               height="100%" 
               style={{ border: 'none' }} 

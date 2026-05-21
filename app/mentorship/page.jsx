@@ -1,5 +1,6 @@
 import FadeIn from '../../components/ui/FadeIn';
 import { BookOpen, Presentation, Users, GraduationCap } from 'lucide-react';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Mentorship Program | SMVITMAA',
@@ -50,8 +51,8 @@ export default function MentorshipPage() {
             <h2 style={{ color: 'var(--primary-color)' }}>Shape the Next Generation</h2>
             <p style={{ textAlign: 'justify' }}>Guidance changes lives. Volunteer to be a mentor, share your industry insights, and help students or junior alumni navigate their career growth successfully. The Department Coordinators will facilitate your integration into the schedule.</p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2.5rem' }}>
-              <button className="btn-primary large">Find a Mentor</button>
-              <button className="btn-outline large">Register to Speak / Mentor</button>
+              <Link href="/directory" className="btn-primary large" style={{ textDecoration: 'none' }}>Find a Mentor</Link>
+              <Link href="/contact" className="btn-outline large" style={{ textDecoration: 'none' }}>Register to Speak / Mentor</Link>
             </div>
           </div>
         </FadeIn>

@@ -1,5 +1,4 @@
 import FadeIn from '../../components/ui/FadeIn';
-import FeaturedAlumni from '../../components/FeaturedAlumni';
 import { 
   Shield, MapPin, Users, CheckCircle2, UserCheck, 
   CalendarDays, LineChart, FileText, Settings, BookOpen, Clock, Target, Briefcase
@@ -10,43 +9,7 @@ export const metadata = {
   title: 'About SMVITMAA | Alumni Portal',
 };
 
-const EXECUTIVE_OFFICERS = [
-  {
-    name: "Gagan G Prabhu",
-    role: "President",
-    title: "Developer and Team Lead",
-    organization: "SAP Labs India Pvt Ltd",
-    image: "https://sode-edu.in/smvitm/wp-content/uploads/2026/04/Gagan-G-prabhu.webp"
-  },
-  {
-    name: "Bhuvanamitra S",
-    role: "Vice president",
-    title: "Geospatial Engineer",
-    organization: "SatSure, Bengaluru",
-    image: "https://sode-edu.in/smvitm/wp-content/uploads/2026/04/BhuvanamitraS.webp"
-  },
-  {
-    name: "Snehal V Rao",
-    role: "Secretary",
-    title: "Quantity Surveyor",
-    organization: "Simons and Associates, Udupi",
-    image: "https://sode-edu.in/smvitm/wp-content/uploads/2026/04/Snehal-V-Rao.webp"
-  },
-  {
-    name: "Shreeraj Bhat",
-    role: "Joint Secretary",
-    title: "Technical Lead",
-    organization: "Cloudbox AI",
-    image: "https://sode-edu.in/smvitm/wp-content/uploads/2026/04/Shreerajbhat.webp"
-  },
-  {
-    name: "Ganesh U G",
-    role: "Treasurer",
-    title: "Assistant Professor",
-    organization: "Dept.of E &C, SMVITM, Bantakal",
-    image: "https://sode-edu.in/smvitm/wp-content/uploads/2026/04/Ganesh-U-G.webp"
-  }
-];
+import AssociationLeadership from '../../components/AssociationLeadership';
 
 export default function AboutPage() {
   return (
@@ -54,7 +17,7 @@ export default function AboutPage() {
       <section className="page-header">
         <FadeIn className="wrapper">
           <h1>About SMVITMAA</h1>
-          <p>Learn about our vision, leadership, and the operational guidelines driving our global alumni network forward.</p>
+          <p>Learn about our vision, leadership, and the operational guidelines driving our alumni network forward.</p>
         </FadeIn>
       </section>
 
@@ -64,10 +27,10 @@ export default function AboutPage() {
           <div className="about-content" style={{ maxWidth: '1000px', margin: '0 auto' }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--primary-color)', textAlign: 'center' }}>Our Mission & Legacy</h2>
             <p style={{ textAlign: 'justify' }}>
-              The Shri Madhwa Vadiraja Institute of Technology & Management Alumni Association (SMVITMAA) is a formally registered entity under the Karnataka Societies Registration Act, 1960 (Serial No. 17). Our primary mission is to foster a robust and enduring bond between the institution and its global community of graduates.
+              The Shri Madhwa Vadiraja Institute of Technology & Management Alumni Association (SMVITMAA) is a formally registered entity under the Karnataka Societies Registration Act, 1960 (Serial No. 17). Our primary mission is to foster a robust and enduring bond between the institution and its community of graduates.
             </p>
             <p style={{ textAlign: 'justify' }}>
-              We are dedicated to establishing dynamic alumni connections, driving impactful mentorship programs, providing career guidance to emerging graduates, and leading philanthropic initiatives that benefit the entire academic community. Operating from our registered office at SMVITM Bantakal, the association underwent a significant by-law amendment in 2018 to further streamline and expand our strategic operations globally.
+              We are dedicated to establishing dynamic alumni connections, driving impactful mentorship programs, providing career guidance to emerging graduates, and leading philanthropic initiatives that benefit the entire academic community. Operating from our registered office at SMVITM Bantakal, the association underwent a significant by-law amendment in 2018 to further streamline and expand our strategic operations widely.
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', margin: '3rem 0' }}>
@@ -79,7 +42,7 @@ export default function AboutPage() {
               <div style={{ background: 'var(--bg-light)', padding: '2rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-light)', textAlign: 'center', boxShadow: 'var(--shadow-soft)' }}>
                   <MapPin size={40} style={{ color: 'var(--primary-color)', marginBottom: '1rem' }}/>
                   <h3 style={{ fontSize: '1.5rem', marginBottom: '0.75rem' }}>Registered Office</h3>
-                  <p style={{ textAlign: 'center', marginBottom: 0, fontSize: '0.95rem' }}>SMVITM Bantakal, Udupi District, Karnataka. Serving as the central hub for global chapters.</p>
+                  <p style={{ textAlign: 'center', marginBottom: 0, fontSize: '0.95rem' }}>SMVITM Bantakal, Udupi District, Karnataka. Serving as the central hub for all chapters.</p>
               </div>
             </div>
 
@@ -111,83 +74,7 @@ export default function AboutPage() {
       </section>
 
       {/* ASSOCIATION LEADERSHIP (OFFICE BEARERS) */}
-      <section className="section-padding wrapper">
-        <FadeIn>
-          <div className="section-header">
-            <h2>Association Leadership</h2>
-            <p>Meet the dedicated alumni office bearers leading the SMVITM Alumni Association.</p>
-          </div>
-          
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))', 
-            gap: '1.75rem',
-            marginTop: '3rem'
-          }}>
-            {EXECUTIVE_OFFICERS.map((officer) => (
-              <div key={officer.name} style={{ 
-                background: 'var(--white)', 
-                borderRadius: '16px', 
-                boxShadow: '0 2px 12px rgba(0,0,0,0.07)',
-                border: '1.5px solid rgba(0,0,0,0.15)',
-                overflow: 'hidden',
-                display: 'flex',
-                flexDirection: 'column',
-              }}>
-                {/* Photo — CSS background, 3:4 ratio, face always visible */}
-                <div style={{
-                  width: '100%',
-                  paddingTop: '120%',
-                  backgroundImage: `url(${officer.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center top',
-                  backgroundRepeat: 'no-repeat',
-                  flexShrink: 0,
-                }} />
-
-                {/* Info strip */}
-                <div style={{
-                  padding: '1rem 1rem 1.2rem',
-                  borderTop: '1px solid var(--border-light)',
-                  textAlign: 'center',
-                }}>
-                  <h3 style={{ fontSize: '1rem', color: 'var(--accent-dark)', margin: '0 0 0.3rem 0', fontWeight: 700 }}>
-                    {officer.name}
-                  </h3>
-                  <span style={{
-                    fontSize: '0.72rem',
-                    color: 'var(--secondary-color)',
-                    fontWeight: 700,
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.06em',
-                    display: 'block',
-                  }}>
-                    {officer.role}
-                  </span>
-                  <span style={{
-                    fontSize: '0.78rem',
-                    color: 'var(--text-body)',
-                    display: 'block',
-                    marginTop: '0.25rem',
-                    lineHeight: '1.4',
-                  }}>
-                    {officer.title}
-                  </span>
-                  <span style={{
-                    fontSize: '0.72rem',
-                    color: 'var(--text-muted)',
-                    display: 'block',
-                    marginTop: '0.15rem',
-                    lineHeight: '1.4',
-                  }}>
-                    {officer.organization}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </FadeIn>
-      </section>
+      <AssociationLeadership />
 
       {/* DETAILED GOVERNANCE & OPERATIONS */}
       <section className="section-padding bg-light">
@@ -315,8 +202,6 @@ export default function AboutPage() {
           </div>
         </FadeIn>
       </section>
-
-      <FeaturedAlumni />
     </>
   );
 }

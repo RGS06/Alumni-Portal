@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import FadeIn from './ui/FadeIn';
 import { HandCoins, Check, ExternalLink, X } from 'lucide-react';
 
@@ -48,7 +49,7 @@ export default function AlumniGiving() {
               <li><Check className="check-icon" /> Transparent allocation of funds.</li>
               <li><Check className="check-icon" /> Enhancing R&D and core facilities.</li>
             </ul>
-            <button className="btn-secondary large mt-6">Contribute Now</button>
+            <Link href="/giving/contribute" className="btn-secondary large mt-6" style={{ display: 'inline-block', textDecoration: 'none' }}>Contribute Now</Link>
           </div>
         </FadeIn>
       </section>
@@ -73,7 +74,7 @@ export default function AlumniGiving() {
           </div>
           <div className="modal-body">
             <iframe 
-              src="/Alumni-corpus-fund.pdf" 
+              src="https://docs.google.com/viewer?url=https://sode-edu.in/smvitm/wp-content/uploads/2026/04/Alumni-Corpus-Fund-Scanned.pdf&embedded=true" 
               width="100%" 
               height="100%" 
               style={{ border: 'none' }} 

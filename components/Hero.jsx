@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import Link from 'next/link';
 import dynamic from 'next/dynamic';
 const Globe = dynamic(() => import('./Globe'), { ssr: false });
 
@@ -85,12 +86,12 @@ export default function Hero() {
           </motion.h1>
           
           <motion.p variants={itemVariants} className="hero-subtitle">
-            Foster lifelong connections and drive institutional excellence. Join a global network where tradition meets tomorrow's innovation.
+            Foster lifelong connections and drive institutional excellence. Join a network where tradition meets tomorrow's innovation.
           </motion.p>
           
           <motion.div variants={itemVariants} className="hero-buttons">
-            <button className="btn-secondary large">Join Alumni Network</button>
-            <button className="btn-outline large">Explore Community <ArrowRight size={18} style={{ marginLeft: '8px' }} /></button>
+            <Link href="/signup" className="btn-secondary large">Join Alumni Network</Link>
+            <Link href="/community" className="btn-outline large">Explore Community <ArrowRight size={18} style={{ marginLeft: '8px' }} /></Link>
           </motion.div>
         </div>
 
@@ -101,12 +102,8 @@ export default function Hero() {
           className="hero-visual"
         >
           <div className="image-composite">
-            <div className="main-img-wrapper" style={{ position: 'absolute', width: '85%', height: '85%', top: 0, right: 0, zIndex: 2 }}>
-              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1470&auto=format&fit=crop" className="hero-img main-img" alt="Graduation" style={{ width: '100%', height: '100%', borderRadius: '40px', boxShadow: '0 40px 100px rgba(0,0,0,0.15)', objectFit: 'cover' }} />
-            </div>
-            
-            <div className="float-img-wrapper" style={{ position: 'absolute', width: '65%', height: '65%', bottom: '-10%', left: '-10%', zIndex: 3 }}>
-              <img src="/alumni1.jpg" className="hero-img float-img" alt="Alumni" style={{ width: '100%', height: '100%', borderRadius: '32px', border: '12px solid white', boxShadow: '0 30px 80px rgba(0,0,0,0.1)', objectFit: 'cover' }} />
+            <div className="main-img-wrapper" style={{ position: 'relative', width: '100%', height: '100%', zIndex: 2 }}>
+              <img src="/image.png" className="hero-img main-img" alt="Graduation" style={{ width: '100%', height: '100%', borderRadius: '40px', boxShadow: '0 40px 100px rgba(0,0,0,0.15)', objectFit: 'cover' }} />
             </div>
 
             <div className="network-dots" style={{ opacity: 0.5 }}></div>

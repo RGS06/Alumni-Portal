@@ -47,21 +47,32 @@ export function AuthProvider({ children }) {
   };
 
   useEffect(() => {
+    let isMounted = true;
+    
+    // Safety fallback: Never stick on the loading screen for more than 4 seconds
+    const fallbackTimeout = setTimeout(() => {
+      if (isMounted) setLoading(false);
+    }, 4000);
+
     const initialize = async () => {
       try {
         const { data: { session: currentSession } } = await supabase.auth.getSession();
+        if (!isMounted) return;
         setSession(currentSession);
         const currentUser = currentSession?.user ?? null;
         setUser(currentUser);
         
         if (currentUser) {
           const prof = await fetchProfile(currentUser.id);
-          setProfile(prof);
+          if (isMounted) setProfile(prof);
         }
       } catch (err) {
         console.error('Initialization error:', err);
       } finally {
-        setLoading(false);
+        if (isMounted) {
+          setLoading(false);
+          clearTimeout(fallbackTimeout);
+        }
       }
     };
 
@@ -81,7 +92,10 @@ export function AuthProvider({ children }) {
       }
     });
 
-    return () => subscription.unsubscribe();
+    return () => {
+      isMounted = false;
+      subscription.unsubscribe();
+    };
   }, []);
 
   return (
@@ -96,7 +110,14 @@ export function AuthProvider({ children }) {
           const prof = await fetchProfile(user.id);
           setProfile(prof);
         }
-      }
+      },
+      signOut: async () => {
+        // Clear state immediately so UI responds at once
+        setUser(null);
+        setProfile(null);
+        setSession(null);
+        await supabase.auth.signOut();
+      },
     }}>
       {children}
     </AuthContext.Provider>

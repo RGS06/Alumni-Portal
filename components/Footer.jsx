@@ -22,17 +22,17 @@ export default function Footer() {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><Link href="#home">Home</Link></li>
-            <li><Link href="#about">About SMVITMAA</Link></li>
-            <li><Link href="#community">Community & Forum</Link></li>
-            <li><Link href="#directory">Directory</Link></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/about">About SMVITMAA</Link></li>
+            <li><Link href="/community">Community & Forum</Link></li>
+            <li><Link href="/directory">Directory</Link></li>
           </ul>
         </div>
         
         <div className="footer-links">
           <h4>Support</h4>
           <ul>
-            <li><Link href="#">Contact Us</Link></li>
+            <li><Link href="/contact">Contact Us</Link></li>
             <li><Link href="#">Privacy Policy</Link></li>
             <li><Link href="#">Terms & Conditions</Link></li>
             <li><a href="https://sode-edu.in/" target="_blank" rel="noopener noreferrer">Main SMVITM Site <ExternalLink size={14} style={{ display: 'inline-block', marginLeft: '4px' }} /></a></li>

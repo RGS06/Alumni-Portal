@@ -1,4 +1,5 @@
 import FadeIn from './ui/FadeIn';
+import Link from 'next/link';
 
 export default function CTABanner() {
   return (
@@ -7,9 +8,9 @@ export default function CTABanner() {
       <FadeIn className="cta-content wrapper">
         <h2>Be a part of the SMVITM Alumni Network</h2>
         <p>Don&apos;t miss out on exclusive opportunities, reconnections, and the power of our community.</p>
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
-          <button className="btn-secondary large">Join Now</button>
-          <button className="btn-outline-white large">Connect With Alumni</button>
+        <div className="cta-actions" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
+          <Link href="/signup" className="btn-secondary large">Join Now</Link>
+          <Link href="/directory" className="btn-outline-white large">Connect With Alumni</Link>
         </div>
       </FadeIn>
     </section>

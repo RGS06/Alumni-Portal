@@ -1,28 +1,115 @@
 # 🎓 SMVITM Alumni Association Portal
 
-### Reconnecting the Past, Empowering the Future.
+<div align="center">
 
-Welcome to the **SMVITM Alumni Portal**, a premium, high-performance web platform designed to foster a vibrant community of alumni, students, and faculty. This portal serves as the central hub for professional networking, mentorship, and collective growth.
+### _Reconnecting the Past, Empowering the Future._
+
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?logo=supabase)](https://supabase.com/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-EF0069?logo=framer)](https://www.framer.com/motion/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A premium, full-stack web platform built for the **Shri Madhwa Vadiraja Institute of Technology & Management (SMVITM)** Alumni Association — fostering professional networking, mentorship, and collective institutional growth.
+
+</div>
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
-- **🌐 Global Alumni Directory**: Connect with alumni around the world with advanced filtering and search capabilities.
-- **💬 Interactive Community Forum**: A space for alumni and students to share insights, job opportunities, and technical knowledge.
-- **🤝 Mentorship Program**: Facilitating meaningful connections between experienced alumni and current students for career guidance.
-- **📈 Real-time Updates**: Stay informed with the latest news, events, and institutional breakthroughs from SMVITM.
-- **🎁 Giving & Contributions**: Seamlessly contribute to institutional growth and support student scholarships.
+### 🌐 For Alumni & Students
+| Feature | Description |
+|---|---|
+| **Alumni Directory** | Search and filter alumni worldwide by batch, branch, or location |
+| **Community Forum** | Post, comment, like, and engage in threaded discussions |
+| **Mentorship Program** | Connect current students with experienced alumni for career guidance |
+| **Events** | Browse and stay updated on institutional and alumni events |
+| **Yearbook** | Batch-wise digital yearbook with photos, quotes & batch stats |
+| **Media Gallery** | Photo and video gallery from alumni events |
+| **Giving & Contributions** | Contribute to scholarships, infrastructure, or specific causes |
+| **Opportunities Board** | Browse and post internship, job, and research opportunities |
+| **Contact** | Reach the alumni association directly |
+
+### 🔐 Admin Panel
+| Feature | Description |
+|---|---|
+| **Admin Dashboard** | Central overview with quick stats and management shortcuts |
+| **Alumni Management** | View, search, and manage registered alumni profiles |
+| **Forum Moderation** | Review and moderate community posts for compliance |
+| **Yearbook Management** | Add, edit, and organize yearbook entries per batch |
+| **Media Management** | Upload and manage photos/videos for the gallery |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 14+](https://nextjs.org/) (App Router)
-- **Styling**: Vanilla CSS & Modern Responsive Design
-- **Database/Backend**: [Supabase](https://supabase.com/) & PostgreSQL
-- **Real-time**: Supabase Edge Functions & Real-time Subscriptions
-- **Deployment**: [GitHub](https://github.com/) & [Vercel](https://vercel.com/) (Planned)
+| Layer | Technology |
+|---|---|
+| **Framework** | [Next.js 14](https://nextjs.org/) (App Router) |
+| **UI Library** | [React 18](https://react.dev/) |
+| **Styling** | Vanilla CSS with custom design system (CSS variables, dark theme) |
+| **Animations** | [Framer Motion 12](https://www.framer.com/motion/) |
+| **Icons** | [Lucide React](https://lucide.dev/) |
+| **Database** | [Supabase](https://supabase.com/) (PostgreSQL) |
+| **Auth** | Supabase Auth (Email/Password) |
+| **Real-time** | Supabase Real-time Subscriptions |
+| **File Exports** | [SheetJS (xlsx)](https://sheetjs.com/) |
+| **Deployment** | [Vercel](https://vercel.com/) (Planned) |
+
+---
+
+## 📁 Project Structure
+
+```
+Alumni Portal/
+├── app/                        # Next.js App Router pages
+│   ├── page.jsx                # Homepage
+│   ├── about/                  # About SMVITMAA page
+│   ├── admin/                  # Admin panel (protected)
+│   │   ├── page.jsx            # Admin dashboard
+│   │   ├── alumni/             # Alumni management
+│   │   ├── media/              # Media management
+│   │   ├── moderation/         # Forum moderation
+│   │   └── yearbook/           # Yearbook management
+│   ├── community/              # Community forum
+│   ├── complete-profile/       # Profile completion flow
+│   ├── contact/                # Contact page
+│   ├── dashboard/              # Logged-in user dashboard
+│   ├── directory/              # Alumni directory
+│   ├── events/                 # Events listing
+│   ├── giving/                 # Giving & contributions
+│   │   └── contribute/         # Contribution form
+│   ├── login/                  # Login page
+│   ├── media/                  # Media gallery
+│   ├── mentorship/             # Mentorship program
+│   ├── opportunities/          # Job/internship opportunities
+│   ├── signup/                 # Registration page
+│   └── yearbook/               # Digital yearbook (batch-wise)
+├── components/                 # Reusable React components
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── AuthContext.jsx         # Global auth state
+│   ├── AdminRoute.jsx          # Admin-only route guard
+│   ├── ProtectedRoute.jsx      # Auth-protected route guard
+│   ├── AssociationLeadership.jsx
+│   ├── AlumniGiving.jsx
+│   ├── FeaturedAlumni.jsx
+│   ├── Globe.jsx               # Animated globe (alumni worldwide)
+│   ├── LatestUpdates.jsx
+│   ├── MentorshipHighlight.jsx
+│   ├── QuickAccess.jsx
+│   └── TrustStrip.jsx
+├── supabase/                   # Database schema SQL files
+│   ├── admin_schema.sql
+│   ├── forum_schema.sql
+│   ├── yearbook_schema.sql
+│   └── yearbook_entries_schema.sql
+├── public/                     # Static assets
+├── next.config.js
+└── package.json
+```
 
 ---
 
@@ -30,66 +117,105 @@ Welcome to the **SMVITM Alumni Portal**, a premium, high-performance web platfor
 
 ### Prerequisites
 
-- Node.js (Latest LTS)
-- npm or yarn
-- Git
+- **Node.js** (v18+ LTS recommended)
+- **npm** or **yarn**
+- **Git**
+- A **Supabase** project (free tier works)
 
-### Installation
+### 1. Clone the Repository
 
-1. **Clone the repository**:
+```bash
+git clone https://github.com/RGS06/Alumni-Portal.git
+cd Alumni-Portal
+```
 
-   ```bash
-   git clone https://github.com/RGS06/Alumni-Portal.git
-   cd Alumni-Portal
-   ```
+### 2. Install Dependencies
 
-2. **Install dependencies**:
+```bash
+npm install
+```
 
-   ```bash
-   npm install
-   ```
+### 3. Set Up Environment Variables
 
-3. **Set up Environment Variables**:
-   Create a `.env.local` file in the root directory and add your Supabase credentials:
+Create a `.env.local` file in the root directory:
 
-   ```env
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-4. **Run the development server**:
+> You can find these in your Supabase project → **Settings → API**.
 
-   ```bash
-   npm run dev
-   ```
+### 4. Set Up the Database
 
-5. **Open the browser**:
-   Visit `http://localhost:3000` to see the portal in action.
+Run the SQL schema files in order in your Supabase **SQL Editor**:
+
+```
+supabase/admin_schema.sql
+supabase/forum_schema.sql
+supabase/yearbook_schema.sql
+supabase/yearbook_entries_schema.sql
+```
+
+### 5. Run the Development Server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🔑 Admin Access
+
+Admin privileges are managed via the `admin_schema.sql` table. To grant a user admin rights, insert their Supabase `user_id` into the `admins` table directly in your Supabase dashboard.
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions from alumni and students! If you'd like to help improve the portal:
+We welcome contributions from alumni and students!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+1. Fork the project
+2. Create your feature branch: `git checkout -b feature/YourFeature`
+3. Commit your changes: `git commit -m 'Add YourFeature'`
+4. Push to the branch: `git push origin feature/YourFeature`
 5. Open a Pull Request
+
+---
+
+## 👨‍💻 Team
+
+| Role | Name |
+|---|---|
+| **Lead Developer** | Raghavendra G S |
+| **Developer** | Sathwik Shetty M |
+| **Developer** | Hrishikesh Kamath |
+| **Developer** | Adithya Shetty |
+| **Developer** | Darshan N |
+
+**Department of Computer Science & Engineering**
+**Shri Madhwa Vadiraja Institute of Technology & Management, Bantakal**
 
 ---
 
 ## 📜 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the **MIT License**. See `LICENSE` for more information.
 
 ---
 
-### 📬 Contact
+## 📬 Contact
 
-**SMVITM Alumni Association**  
-📧 webmaster@sode-edu.in  
+**SMVITM Alumni Association**
+📧 [webmaster@sode-edu.in](mailto:webmaster@sode-edu.in)
 🌐 [sode-edu.in](https://sode-edu.in)
+📘 [LinkedIn](https://www.linkedin.com/company/shri-madhwa-vadiraja-institute-of-technology-and-management/)
+📷 [Instagram](https://www.instagram.com/smvitm.sode/)
 
-Made with ❤️
+---
+
+<div align="center">
+  Made with ❤️ by the SMVITM CSE Team
+</div>

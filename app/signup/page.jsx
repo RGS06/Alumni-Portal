@@ -47,13 +47,47 @@ export default function SignupPage() {
           role: formData.role,
           department: formData.department,
           batch: formData.batch,
-          is_alumni_faculty: formData.isAlumniFaculty
-        }
-      }
+          is_alumni_faculty: formData.isAlumniFaculty,
+        },
+      },
     });
 
-    if (signUpError) {
+    // "Database error saving new user" means Supabase Auth created the user in
+    // auth.users but the handle_new_user trigger failed. Treat it as a soft error —
+    // we'll manually upsert the profile row below.
+    const isTriggerError =
+      signUpError?.message?.toLowerCase().includes('database error saving new user') ||
+      signUpError?.message?.toLowerCase().includes('database error');
+
+    if (signUpError && !isTriggerError) {
+      // Hard auth errors (email taken, weak password, etc.) — stop here
       setErrorMsg(signUpError.message);
+      setLoading(false);
+      return;
+    }
+
+    // Get the user from the response (works even when trigger fails)
+    const newUser = signUpData?.user;
+
+    if (newUser) {
+      // Always upsert the profile row directly — covers both:
+      // (a) trigger worked fine  →  on conflict do nothing / update
+      // (b) trigger failed       →  inserts the row ourselves
+      const { error: profileError } = await supabase.from('profiles').upsert({
+        id: newUser.id,
+        full_name: formData.fullName,
+        role: formData.role,
+        department: formData.department,
+        batch: formData.batch || null,
+        updated_at: new Date().toISOString(),
+      }, { onConflict: 'id' });
+
+      if (profileError) {
+        console.warn('Profile upsert warning (non-fatal):', profileError.message);
+      }
+    } else {
+      // No user object at all — true failure (e.g. email already registered)
+      setErrorMsg(signUpError?.message || 'Registration failed. Please try again.');
       setLoading(false);
       return;
     }

@@ -45,14 +45,14 @@ export default function MediaPage() {
         <FadeIn className="wrapper">
           <div className="section-header">
             <h2>Alumni Achievements</h2>
-            <p>Celebrating the global footprint of SMVITM graduates.</p>
+            <p>Celebrating the widespread footprint of SMVITM graduates.</p>
           </div>
           <div className="feed-grid">
              {/* Dynamic placeholders for achievements */}
              <article className="feed-card" style={{ display: 'flex', flexDirection: 'column' }}>
                 <div style={{ padding: '2rem', flex: 1 }}>
                    <h3 style={{ color: 'var(--primary-color)' }}>Niveus Solutions Expansion</h3>
-                   <p style={{ textAlign: 'justify' }}>Proud of our alumni founders at Niveus Solutions for expanding their global cloud consulting operations.</p>
+                   <p style={{ textAlign: 'justify' }}>Proud of our alumni founders at Niveus Solutions for expanding their cloud consulting operations.</p>
                 </div>
              </article>
              <article className="feed-card" style={{ display: 'flex', flexDirection: 'column' }}>

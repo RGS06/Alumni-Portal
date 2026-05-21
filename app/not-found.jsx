@@ -6,7 +6,7 @@ export default function NotFound() {
       <div className="not-found-container">
         <div className="not-found-visual">
           <img 
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1470&auto=format&fit=crop" 
+            src="/image.png" 
             alt="Page Not Found" 
             className="not-found-img"
           />

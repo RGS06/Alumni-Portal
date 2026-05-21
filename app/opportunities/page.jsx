@@ -1,5 +1,6 @@
 import FadeIn from '../../components/ui/FadeIn';
 import { Briefcase, MapPin, Building2, CalendarDays } from 'lucide-react';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Alumni Opportunities | SMVITMAA',
@@ -18,7 +19,7 @@ export default function OpportunitiesPage() {
       <section className="section-padding bg-light">
         <FadeIn className="wrapper community-layout">
           <div className="community-sidebar">
-            <button className="btn-primary" style={{ width: '100%', marginBottom: '2rem' }}>Post a Job</button>
+            <Link href="/login" className="btn-primary" style={{ width: '100%', marginBottom: '2rem', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Post a Job</Link>
             <div className="sidebar-menu">
               <button className="active">All Jobs</button>
               <button>Internships</button>
@@ -37,7 +38,7 @@ export default function OpportunitiesPage() {
                   <span style={{ background: 'var(--bg-light)', padding: '0.25rem 0.75rem', borderRadius: '20px', fontSize: '0.85rem', marginLeft: '0.5rem' }}>Posted by Alumni</span>
                 </div>
               </div>
-              <button className="btn-secondary">Apply Now</button>
+              <Link href="/login" className="btn-secondary" style={{ display: 'inline-block', textDecoration: 'none' }}>Apply Now</Link>
             </div>
 
             <div className="job-card">
@@ -49,7 +50,7 @@ export default function OpportunitiesPage() {
                   <span className="text-muted" style={{ marginLeft: '1rem', fontSize: '0.85rem' }}><CalendarDays size={14} style={{ display: 'inline', marginRight: '4px' }} /> Posted 2 days ago</span>
                 </div>
               </div>
-              <button className="btn-secondary">Apply Now</button>
+              <Link href="/login" className="btn-secondary" style={{ display: 'inline-block', textDecoration: 'none' }}>Apply Now</Link>
             </div>
           </div>
         </FadeIn>

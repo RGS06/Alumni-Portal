@@ -19,9 +19,9 @@ export default function LatestUpdates() {
               <span className="feed-tag">Event</span>
             </div>
             <div className="feed-content">
-              <h3>Global Alumni Meet 2026</h3>
+              <h3>Annual Alumni Meet 2026</h3>
               <p>Join us this December as we host the largest reunion in SMVITM history. Register early to book your spots and reconnect with batchmates.</p>
-              <Link href="#" className="feed-link">
+              <Link href="/events" className="feed-link">
                 Read More <ChevronRight size={18} />
               </Link>
             </div>
@@ -35,7 +35,7 @@ export default function LatestUpdates() {
             <div className="feed-content">
               <h3>AI in Healthcare - Guest Lecture</h3>
               <p>Dr. Smitha, an alumnus from the 2015 batch, recently visited the campus to discuss disruptive innovations in med-tech.</p>
-              <Link href="#" className="feed-link">
+              <Link href="/mentorship" className="feed-link">
                 Read More <ChevronRight size={18} />
               </Link>
             </div>
@@ -49,7 +49,7 @@ export default function LatestUpdates() {
             <div className="feed-content">
               <h3>Startup Success: Niveus Solutions</h3>
               <p>Congratulating our alumni involved with Niveus for their recent expansion. Read the exclusive interview with the founders.</p>
-              <Link href="#" className="feed-link">
+              <Link href="/media" className="feed-link">
                 Read More <ChevronRight size={18} />
               </Link>
             </div>
