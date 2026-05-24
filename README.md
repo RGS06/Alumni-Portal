@@ -184,6 +184,9 @@ We welcome contributions from alumni and students!
 5. Open a Pull Request
 
 ---
+**Shri Madhwa Vadiraja Institute of Technology & Management, Bantakal**
+
+---
 
 ## 📜 License
 
