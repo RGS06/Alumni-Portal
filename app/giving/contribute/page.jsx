@@ -195,7 +195,7 @@ export default function ContributePage() {
             onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.2)'; e.currentTarget.style.transform = 'translateX(-5px)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.12)'; e.currentTarget.style.transform = 'translateX(0)'; }}
           >
-            <ArrowLeft size={18} /> Back to Giving Overview
+            <ArrowLeft size={18} /> Back to Corpus Fund Overview
           </Link>
 
           <h1 style={{ fontSize: 'clamp(2rem, 6vw, 3.5rem)', margin: 0, fontWeight: 900, color: 'white', letterSpacing: '-0.03em', lineHeight: 1.1 }}>
@@ -335,8 +335,7 @@ export default function ContributePage() {
                     <select required style={inputStyle} value={formData.purpose} onChange={e => setFormData({ ...formData, purpose: e.target.value })}>
                       <option value="">Select Purpose</option>
                       <option value="Merit Scholarships">Merit Scholarships</option>
-                      <option value="Infrastructure Development">Infrastructure Development</option>
-                      <option value="Student Welfare / Projects">Student Welfare / Projects</option>
+
                       <option value="General Corpus Fund">General Corpus Fund</option>
                     </select>
                   </div>

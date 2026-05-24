@@ -79,7 +79,6 @@ const BOARD_MEMBERS = [
 ];
 
 const FACULTY_COORDINATORS = [
-  { name: "Dr. Raviprabha K", image: "https://sode-edu.in/smvitm/wp-content/uploads/2026/04/Dr.-Raviprabha-K.webp" },
   { name: "Aditya Kudva", image: "https://sode-edu.in/smvitm/wp-content/uploads/2026/04/Aditya-Kudva.webp" },
   { name: "Ganesh U G", image: "https://sode-edu.in/smvitm/wp-content/uploads/2026/04/Ganesh-U-G-1.webp" },
   { name: "Megha Rani", image: "https://sode-edu.in/smvitm/wp-content/uploads/2026/04/Megha-Rani.webp" },

@@ -13,7 +13,7 @@ export default function EventsPage() {
       <section className="page-header">
         <FadeIn className="wrapper">
           <h1>Events, Meets & Interactions</h1>
-          <p>Stay connected through our officially sanctioned alumni meets and regular interaction programs across all chapters.</p>
+          <p>Stay connected through our officially sanctioned alumni meets and regular interaction programs.</p>
         </FadeIn>
       </section>
       

@@ -185,21 +185,6 @@ We welcome contributions from alumni and students!
 
 ---
 
-## 👨‍💻 Team
-
-| Role | Name |
-|---|---|
-| **Lead Developer** | Raghavendra G S |
-| **Developer** | Sathwik Shetty M |
-| **Developer** | Hrishikesh Kamath |
-| **Developer** | Adithya Shetty |
-| **Developer** | Darshan N |
-
-**Department of Computer Science & Engineering**
-**Shri Madhwa Vadiraja Institute of Technology & Management, Bantakal**
-
----
-
 ## 📜 License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.

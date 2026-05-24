@@ -77,18 +77,7 @@ export default function GivingPage() {
               <h3>Merit Scholarships</h3>
               <p style={{ textAlign: 'justify' }}>Providing substantial financial assistance to academically exceptional and economically backward students, ensuring uninterrupted education.</p>
             </div>
-            
-            <div className="access-card">
-              <div className="ac-icon" style={{ background: 'rgba(197, 144, 72, 0.1)', color: 'var(--secondary-color)' }}><Building /></div>
-              <h3>Infrastructure</h3>
-              <p style={{ textAlign: 'justify' }}>Strategic allocation towards the continuous enhancement of Core Facilities, Labs, and R&D centers keeping SMVITM at the cutting edge.</p>
-            </div>
-            
-            <div className="access-card">
-              <div className="ac-icon" style={{ background: 'rgba(18, 33, 71, 0.1)', color: 'var(--accent-dark)' }}><Heart /></div>
-              <h3>Student Welfare</h3>
-              <p style={{ textAlign: 'justify' }}>Supporting technical projects, national-level competition participation, and holistic well-being initiatives across departments.</p>
-            </div>
+
           </div>
         </FadeIn>
       </section>

@@ -72,7 +72,7 @@ export default function Navbar() {
           <Link href="/community" className={`nav-link ${pathname === '/community' ? 'active' : ''}`}>Community</Link>
           <Link href="/opportunities" className={`nav-link ${pathname === '/opportunities' ? 'active' : ''}`}>Jobs</Link>
           <Link href="/events" className={`nav-link ${pathname === '/events' ? 'active' : ''}`}>Events</Link>
-          <Link href="/giving" className={`nav-link ${pathname === '/giving' ? 'active' : ''}`}>Giving</Link>
+          <Link href="/giving" className={`nav-link ${pathname === '/giving' ? 'active' : ''}`}>Corpus Fund</Link>
           
           <div className="mobile-actions">
             {user ? (
