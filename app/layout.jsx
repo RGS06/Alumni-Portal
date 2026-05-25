@@ -2,6 +2,7 @@ import './globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { AuthProvider } from '../components/AuthContext'
+import FeedbackWidget from '../components/FeedbackWidget'
 
 export const metadata = {
   title: 'SMVITM Alumni Portal | Connecting Generations',
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
           <main className="main-content">
             {children}
           </main>
+          <FeedbackWidget />
           <Footer />
         </AuthProvider>
       </body>

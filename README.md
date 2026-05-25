@@ -19,43 +19,45 @@ A premium, full-stack web platform built for the **Shri Madhwa Vadiraja Institut
 ## ✨ Features
 
 ### 🌐 For Alumni & Students
-| Feature | Description |
-|---|---|
-| **Alumni Directory** | Search and filter alumni worldwide by batch, branch, or location |
-| **Community Forum** | Post, comment, like, and engage in threaded discussions |
-| **Mentorship Program** | Connect current students with experienced alumni for career guidance |
-| **Events** | Browse and stay updated on institutional and alumni events |
-| **Yearbook** | Batch-wise digital yearbook with photos, quotes & batch stats |
-| **Media Gallery** | Photo and video gallery from alumni events |
-| **Giving & Contributions** | Contribute to scholarships, infrastructure, or specific causes |
-| **Opportunities Board** | Browse and post internship, job, and research opportunities |
-| **Contact** | Reach the alumni association directly |
+
+| Feature                    | Description                                                          |
+| -------------------------- | -------------------------------------------------------------------- |
+| **Alumni Directory**       | Search and filter alumni worldwide by batch, branch, or location     |
+| **Community Forum**        | Post, comment, like, and engage in threaded discussions              |
+| **Mentorship Program**     | Connect current students with experienced alumni for career guidance |
+| **Events**                 | Browse and stay updated on institutional and alumni events           |
+| **Yearbook**               | Batch-wise digital yearbook with photos, quotes & batch stats        |
+| **Media Gallery**          | Photo and video gallery from alumni events                           |
+| **Giving & Contributions** | Contribute to scholarships                                           |
+| **Opportunities Board**    | Browse and post internship, job, and research opportunities          |
+| **Contact**                | Reach the alumni association directly                                |
 
 ### 🔐 Admin Panel
-| Feature | Description |
-|---|---|
-| **Admin Dashboard** | Central overview with quick stats and management shortcuts |
-| **Alumni Management** | View, search, and manage registered alumni profiles |
-| **Forum Moderation** | Review and moderate community posts for compliance |
-| **Yearbook Management** | Add, edit, and organize yearbook entries per batch |
-| **Media Management** | Upload and manage photos/videos for the gallery |
+
+| Feature                 | Description                                                |
+| ----------------------- | ---------------------------------------------------------- |
+| **Admin Dashboard**     | Central overview with quick stats and management shortcuts |
+| **Alumni Management**   | View, search, and manage registered alumni profiles        |
+| **Forum Moderation**    | Review and moderate community posts for compliance         |
+| **Yearbook Management** | Add, edit, and organize yearbook entries per batch         |
+| **Media Management**    | Upload and manage photos/videos for the gallery            |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| **Framework** | [Next.js 14](https://nextjs.org/) (App Router) |
-| **UI Library** | [React 18](https://react.dev/) |
-| **Styling** | Vanilla CSS with custom design system (CSS variables, dark theme) |
-| **Animations** | [Framer Motion 12](https://www.framer.com/motion/) |
-| **Icons** | [Lucide React](https://lucide.dev/) |
-| **Database** | [Supabase](https://supabase.com/) (PostgreSQL) |
-| **Auth** | Supabase Auth (Email/Password) |
-| **Real-time** | Supabase Real-time Subscriptions |
-| **File Exports** | [SheetJS (xlsx)](https://sheetjs.com/) |
-| **Deployment** | [Vercel](https://vercel.com/) (Planned) |
+| Layer            | Technology                                                        |
+| ---------------- | ----------------------------------------------------------------- |
+| **Framework**    | [Next.js 14](https://nextjs.org/) (App Router)                    |
+| **UI Library**   | [React 18](https://react.dev/)                                    |
+| **Styling**      | Vanilla CSS with custom design system (CSS variables, dark theme) |
+| **Animations**   | [Framer Motion 12](https://www.framer.com/motion/)                |
+| **Icons**        | [Lucide React](https://lucide.dev/)                               |
+| **Database**     | [Supabase](https://supabase.com/) (PostgreSQL)                    |
+| **Auth**         | Supabase Auth (Email/Password)                                    |
+| **Real-time**    | Supabase Real-time Subscriptions                                  |
+| **File Exports** | [SheetJS (xlsx)](https://sheetjs.com/)                            |
+| **Deployment**   | [Vercel](https://vercel.com/) (Planned)                           |
 
 ---
 
@@ -184,6 +186,7 @@ We welcome contributions from alumni and students!
 5. Open a Pull Request
 
 ---
+
 **Shri Madhwa Vadiraja Institute of Technology & Management, Bantakal**
 
 ---
@@ -205,5 +208,5 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ---
 
 <div align="center">
-  Made with ❤️ by the SMVITM CSE Team
+  Made with ❤️ by SMVITM
 </div>

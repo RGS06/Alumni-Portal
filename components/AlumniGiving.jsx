@@ -47,7 +47,6 @@ export default function AlumniGiving() {
             <ul className="impact-list">
               <li><Check className="check-icon" /> Fueling purely academic scholarships.</li>
               <li><Check className="check-icon" /> Transparent allocation of funds.</li>
-              <li><Check className="check-icon" /> Enhancing R&D and core facilities.</li>
             </ul>
             <Link href="/giving/contribute" className="btn-secondary large mt-6" style={{ display: 'inline-block', textDecoration: 'none' }}>Contribute Now</Link>
           </div>

@@ -41,24 +41,72 @@ export default function DirectoryPage() {
         <FadeIn className="dir-grid mt-6">
           <div className="alumni-card">
             <div style={{ position: 'relative', width: '100px', height: '100px', margin: '0 auto 1.5rem auto' }}>
-              <Image src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Rahul Kotian" fill style={{ objectFit: 'cover', borderRadius: '50%', border: '3px solid var(--secondary-color)' }} />
+              <Image src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Mr. Puneeth Acharya" fill style={{ objectFit: 'cover', borderRadius: '50%', border: '3px solid var(--secondary-color)' }} />
             </div>
-            <h4>Rahul Kotian</h4>
-            <span className="role">Head Projects</span>
+            <h4>Mr. Puneeth Acharya</h4>
+            <span className="role">Batch of 2021</span>
             <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-              <MapPin size={16} /> Bengaluru
+              <MapPin size={16} /> Eminent Educationist
             </p>
             <Link href="/login" className="btn-primary" style={{ width: '100%', marginTop: '1rem', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Connect</Link>
           </div>
-          {/* Duplicates for UI preview */}
+          
           <div className="alumni-card">
             <div style={{ position: 'relative', width: '100px', height: '100px', margin: '0 auto 1.5rem auto' }}>
-              <Image src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop" alt="Shilpa Shetty" fill style={{ objectFit: 'cover', borderRadius: '50%', border: '3px solid var(--secondary-color)' }} />
+              <Image src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop" alt="Ms. Vaishali Bangera" fill style={{ objectFit: 'cover', borderRadius: '50%', border: '3px solid var(--secondary-color)' }} />
             </div>
-            <h4>Shilpa Shetty</h4>
-            <span className="role">Software Engineer</span>
+            <h4>Ms. Vaishali Bangera</h4>
+            <span className="role">Batch of 2020</span>
             <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-              <MapPin size={16} /> Apple India
+              <MapPin size={16} /> Eminent Educationist
+            </p>
+            <Link href="/login" className="btn-primary" style={{ width: '100%', marginTop: '1rem', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Connect</Link>
+          </div>
+          
+          <div className="alumni-card">
+            <div style={{ position: 'relative', width: '100px', height: '100px', margin: '0 auto 1.5rem auto' }}>
+              <Image src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop" alt="Dr. Krishnaraj Chadaga" fill style={{ objectFit: 'cover', borderRadius: '50%', border: '3px solid var(--secondary-color)' }} />
+            </div>
+            <h4>Dr. Krishnaraj Chadaga</h4>
+            <span className="role">Batch of 2018</span>
+            <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+              <MapPin size={16} /> Eminent Educationist
+            </p>
+            <Link href="/login" className="btn-primary" style={{ width: '100%', marginTop: '1rem', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Connect</Link>
+          </div>
+
+          <div className="alumni-card">
+            <div style={{ position: 'relative', width: '100px', height: '100px', margin: '0 auto 1.5rem auto' }}>
+              <Image src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop" alt="Ms. Chandana" fill style={{ objectFit: 'cover', borderRadius: '50%', border: '3px solid var(--secondary-color)' }} />
+            </div>
+            <h4>Ms. Chandana</h4>
+            <span className="role">Batch of 2017</span>
+            <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+              <MapPin size={16} /> Eminent Educationist
+            </p>
+            <Link href="/login" className="btn-primary" style={{ width: '100%', marginTop: '1rem', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Connect</Link>
+          </div>
+
+          <div className="alumni-card">
+            <div style={{ position: 'relative', width: '100px', height: '100px', margin: '0 auto 1.5rem auto' }}>
+              <Image src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop" alt="Mr. Shreenidhi H Bhat" fill style={{ objectFit: 'cover', borderRadius: '50%', border: '3px solid var(--secondary-color)' }} />
+            </div>
+            <h4>Mr. Shreenidhi H Bhat</h4>
+            <span className="role">Batch of 2016</span>
+            <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+              <MapPin size={16} /> Eminent Educationist
+            </p>
+            <Link href="/login" className="btn-primary" style={{ width: '100%', marginTop: '1rem', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Connect</Link>
+          </div>
+
+          <div className="alumni-card">
+            <div style={{ position: 'relative', width: '100px', height: '100px', margin: '0 auto 1.5rem auto' }}>
+              <Image src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Ms. Lavanya" fill style={{ objectFit: 'cover', borderRadius: '50%', border: '3px solid var(--secondary-color)' }} />
+            </div>
+            <h4>Ms. Lavanya</h4>
+            <span className="role">Batch of 2015</span>
+            <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+              <MapPin size={16} /> Eminent Educationist
             </p>
             <Link href="/login" className="btn-primary" style={{ width: '100%', marginTop: '1rem', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Connect</Link>
           </div>

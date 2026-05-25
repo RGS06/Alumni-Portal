@@ -22,10 +22,10 @@ export default function Footer() {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About SMVITMAA</Link></li>
-            <li><Link href="/community">Community & Forum</Link></li>
+            <li><Link href="/about">About Us</Link></li>
             <li><Link href="/directory">Directory</Link></li>
+            <li><Link href="/events">Events</Link></li>
+            <li><Link href="/giving">Corpus Fund</Link></li>
           </ul>
         </div>
         

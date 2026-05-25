@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import AdminRoute from '../../components/AdminRoute';
@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { label: 'Overview',     href: '/admin',             icon: LayoutDashboard },
   { label: 'Alumni Profiles', href: '/admin/alumni',   icon: Users },
   { label: 'Yearbook',     href: '/admin/yearbook',    icon: BookOpen },
+  { label: 'Spotlights',   href: '/admin/spotlights',  icon: Image },
   { label: 'Moderation',   href: '/admin/moderation',  icon: MessageSquare },
   { label: 'Media',        href: '/admin/media',       icon: Image },
 ];
@@ -99,6 +100,12 @@ function AdminSidebar({ collapsed, setCollapsed }) {
 export default function AdminLayout({ children }) {
   const [collapsed, setCollapsed] = useState(false);
   const sidebarWidth = collapsed ? 64 : 220;
+
+  useEffect(() => {
+    const main = document.querySelector('.main-content');
+    if (main) main.style.paddingTop = '0';
+    return () => { if (main) main.style.paddingTop = ''; };
+  }, []);
 
   return (
     <AdminRoute>

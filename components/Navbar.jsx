@@ -45,6 +45,10 @@ export default function Navbar() {
     setIsMenuOpen(false);
   }, [pathname]);
 
+  if (pathname?.startsWith('/admin')) {
+    return null;
+  }
+
   return (
     <nav
       className={`navbar ${isMenuOpen ? 'menu-open' : ''}`}
@@ -68,6 +72,7 @@ export default function Navbar() {
           <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
           <Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About</Link>
           <Link href="/directory" className={`nav-link ${pathname === '/directory' ? 'active' : ''}`}>Directory</Link>
+          <Link href="/spotlights" className={`nav-link ${pathname === '/spotlights' ? 'active' : ''}`}>Spotlights</Link>
           <Link href="/yearbook" className={`nav-link ${pathname?.startsWith('/yearbook') ? 'active' : ''}`}>Yearbook</Link>
           <Link href="/community" className={`nav-link ${pathname === '/community' ? 'active' : ''}`}>Community</Link>
           <Link href="/opportunities" className={`nav-link ${pathname === '/opportunities' ? 'active' : ''}`}>Jobs</Link>
